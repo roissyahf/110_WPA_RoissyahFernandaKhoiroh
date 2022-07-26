@@ -1,4 +1,4 @@
-# 110_WPA_RoissyahFernandaKhoiroh
+# 110_WPA_RoissyahFernandaKhoiroh_miniproject_cdnversion
 
 Branch ini berisikan mini project untuk membuat company profile (cdn version).
 Adapun, mini project tersebut sudah mencakup kriteria berikut:
