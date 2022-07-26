@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+  <meta http-equiv="refresh" content="30" />
+  <meta name="description" content="Statmads Company profile" />
+  <meta name="author" content="roissyahf" />
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="../img/statmads_favicon.png">
+  <title>Document</title>
+  <!-- Core CSS File -->
+  <link rel="stylesheet" href="../css/style_real_project.css">
+  <!-- Bootstrap CSS File -->
+  <link rel="stylesheet" href="../css/owl.carousel.min.css">
+  <link rel="stylesheet" href="../css/owl.theme.default.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+</head>
+
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container px-5">
+        <a class="navbar-brand" href="#">Statmads</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span
+            class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="../html/home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../html/about.html" target="_blank">About Us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                More
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="../html/pricing.html" target="_blank">Pricing</a></li>
+                <li><a class="dropdown-item" href="../html/book_now.html" target="_blank">Book Now</a></li>
+                <li><a class="dropdown-item" href="../html/blog.html" target="_blank">Blog</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+
+                <li><a class="dropdown-item" href="#contact-us">Contact Us</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Book Now -->
+  <section class="book-now">
+    <div class="container px-5 my-5">
+      <h2 class="fw-bolder mb-0">Book Now</h2>
+      <div class="row gx-5">
+        <div class="col-xl-8">
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Nama Lengkap</label>
+            <input class="form-control" id="name" type="text" placeholder="Enter your name..."
+              data-sb-validations="required" />
+            <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Alamat Email</label>
+            <input class="form-control" id="email" type="email" placeholder="name@example.com"
+              data-sb-validations="required,email" />
+            <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">No. Handphone</label>
+            <input class="form-control" id="phone" type="tel" placeholder="(+62)..." data-sb-validations="required" />
+            <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Pilih Paket</label>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+              <label class="form-check-label" for="flexRadioDefault1">
+                1400 kandela
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+              <label class="form-check-label" for="flexRadioDefault2">
+                2400 kandela
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+              <label class="form-check-label" for="flexRadioDefault2">
+                4400 kandela
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+              <label class="form-check-label" for="flexRadioDefault2">
+                7400 kandela
+              </label>
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Tambahan</label>
+            <textarea class="form-control" id="message" type="text"
+              placeholder="Halo Kak, saya bingung memahami materi matkul Pengantar Statistika Matematis, khususnya teknik CDF dan Metode Transformasi. Saya ingin penjelasan detail dari tutor, mulai dari konsep dasar tentunya."
+              style="height: 10rem" data-sb-validations="required"></textarea>
+            <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
+          </div>
+          <button type="button" class="btn btn-secondary btn-lg btn-warning">Submit</button>
+        </div>
+        <div class="col-xl-4">
+          <div class="card border-warning bg-light mt-xl-5">
+            <div class="card-body p-4 py-lg-5">
+              <div class="d-flex align-items-center justify-content-center">
+                <div class="text-center">
+                  <div class="h6 fw-bolder">Masih ragu memesan layanan kami?</div>
+                  <p class="text-muted mb-4">
+                    Hilangkan keraguan anda dengan menghubungi kami secara langsung di
+                    <div class="col item social">
+                      <a href="https://wa.me/message/CXMYUBPJQ4BVJ1" target="_blank"><i class="icon ion-social-whatsapp"><img
+                            src="../img/icon/whatsapp_logo.svg" height="40px" width="40px"></i></a>
+                    </div>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  </section>
+
+
+  <!-- Footer -->
+  <section class="footer_ bg-dark">
+    <footer class="container-fluid">
+      <div class="row">
+        <div class="col-sm-6 col-md-3 item">
+          <h3>Layanan</h3>
+          <ul>
+            <li><a href="../html/home.html" target="_blank">Private Tutoring</a></li>
+            <li><a href="../html/home.html" target="_blank">Memandu Pengerjaan Tugas</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-6 col-md-3 item">
+          <h3>Tentang Kami</h3>
+          <ul>
+            <li><a href="../html/about.html" target="_blank">Visi Misi</a></li>
+            <li><a href="../html/about.html" target="_blank">Tutor Kami</a></li>
+          </ul>
+        </div>
+        <div class="col-md-6 item text">
+          <h3>Statmads</h3>
+          <p>Mencerahkan pikiran, mengajari dengan sepenuh hati</p>
+        </div>
+        <a id="contact-us"></a>
+        <div class="col item social">
+          <a href="https://wa.me/message/CXMYUBPJQ4BVJ1" target="_blank"><i class="icon ion-social-whatsapp"><img
+                src="../img/icon/whatsapp_logo.svg" alt=""></i></a>
+        </div>
+      </div>
+      <p class="copyright"><strong>Statmads © 2022</strong></p>
+      </div>
+    </footer>
+  </section>
+
+  <!-- Core theme JS-->
+  <script src="../js/real_project.js"></script>
+  <!-- Bootstrap JS File -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+    </script>
+
+</body>
+
+</html>
