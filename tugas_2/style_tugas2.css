@@ -1,0 +1,137 @@
+/*Memberi gaya halaman web*/
+*{
+    box-sizing: border-box;
+}
+/*Memberi gaya pada body*/
+.body{
+    margin: 0;
+}
+/*Mengatur jarak jendela browser ke content*/
+.container{
+    width: 90%;
+    max-width: 1200px;
+    image-resolution: 0 auto;
+}
+/*Memberi gaya pada header*/
+.header{
+    height: 100px;
+    width: 100%;
+    background-color: rgb(249, 245, 9);
+    text-align: left;
+    font-size: 15px;
+    color:#051249;
+    font-family:'Ubuntu', sans-serif;
+    padding: 5px;
+    }
+/*Memberi gaya pada logo
+.logo {
+    width: 100%;
+    height: 100px;
+    border-radius: 100%;
+    float: right;
+}
+Menempatkan image (logo) ke dalam header
+.logo img{
+    height: 60px;
+}
+Lebih memilih memasukkan nama kursus ketimbang logo,
+kalau dimasukkan keduanya malah tumpang tindih dan ada yang keluar*/
+/*Mengatur penempatan navigation bar*/
+ul.navigation{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+/*Mengatur letak navigation bar*/
+ul.navigation li{
+    float: right;
+}
+/*Mengatur gaya pada text navigasi*/
+ul.navigation li a{
+    display: inline-block;
+    padding: 10px;
+    line-height: 30px;
+    text-decoration: none;
+    transition: 1000ms;
+    font-size: 15px;
+    font-family: 'Righteous', cursive;
+    text-align: center;
+}
+/*Mengatur gaya pada link text navigasi*/
+ul.navigation li a:hover{
+    color:#0a0a0a;
+    background-color: rgb(247, 53, 9);
+}
+/*memberi gaya pada slogan: mencerahkan*/
+#cerah{
+    float: center;
+    font-size: 15px;
+    font-family: 'Fresca', sans-serif;
+}
+/*Header malah semakin berisi, navigation bar-nya tidak bisa
+bersanding dengan text, mungkin karena ia tidak masuk ke header,
+masuk ke footer (seperti yang tertulis di bawah)*/
+/*memberi gaya pada article*/
+.article_{
+    float: left;
+    padding: 10px;
+    background-color: #fbf39b;  
+    width: 100%;
+    height: 1150px;
+    font-family: 'Catamaran', sans-serif;
+}
+/*Memberi gaya pada  sidebar
+.sidebar {
+    width: 20%;
+    height: 1150px;
+    background-color: aquamarine;
+    float: left;
+}
+Tidak jadi menambahkan sidebar, karena tidak selaras dengan article. Saat dicoba
+posisi sidebar lebih condong ke atas (mengikuti navigation bar),
+sehingga bagian bawah kosong*/
+/*memberi gaya pada footer*/
+.footer{
+    height: 100px;
+    width: 100%;
+    background-color: rgb(249, 245, 9);
+    text-align: center;
+    font-size: 15px;
+    color:#ffffff;
+    font-family:'Montserrat', sans-serif;
+    padding: 10px;
+}
+/*seharusnya footer ini ada di bawah article,
+ehh malah masuk ke navigation bar. Kalau dihilangkan navigation bar-nya malah pecah*/
+/* Responsive layout 
+agar 2 kotak yang telah dibuat menempel atas ke bawah bukan ke samping saat dibuka di layar kecil*/
+@media (max-width: 600px) {
+    nav, article {
+      width: 100%;
+      height: auto;
+    }
+  }
+/*memberi gaya pada <h1> mengapa, apa, paket*/
+#subtask{
+    border-style: dashed;
+    border-color: rgb(253, 8, 8) rgb(10, 248, 10) rgb(57, 57, 242) rgb(243, 179, 20);
+    padding-top: 10px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    text-align: center;
+    font-family:'Righteous', cursive;
+    color: rgb(15, 109, 106);
+}
+/*memberi gaya pada tabel*/
+.table, th, td{
+    border: 1px solid rgb(0, 0, 0);
+    border-collapse: collapse;
+    text-align: center;
+}
+/*memberi gaya pada <p> tunggu*/
+#tunggu{font-family:'Righteous', cursive;
+        font-size: 18px;
+        color:rgb(15, 109, 106);
+        text-align: center;
+}

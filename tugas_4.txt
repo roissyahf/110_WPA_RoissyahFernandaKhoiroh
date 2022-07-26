@@ -1,0 +1,20 @@
+tugas_4
+
+Membuat Repository GitHub, lalu membagikan linknya ke kolom chat zoom
+
+Saya sudah membagikan link repository pada saat live session, namun akan saya lampirkan lagi di text ini.
+
+Cara membuat Repository GitHub:
+1. Membuka folder root di VSCode
+2. Pilih file/folder yang akan dipush
+3. Go to terminal, pastikan letak directory saat ini sesuai dengan letak file/folder yang akan dipush
+4. Ketikkan command ini secara bertahap:
+git init
+git add . (bila ingin push semua file di current directory)
+git commit -m coba
+git branch -M mine
+git remote add origin https://github.com/roissyahf/latihan
+git push -u origin mine
+
+jadi, berikut link untuk mengakses repository latihan:
+https://github.com/roissyahf/latihan.git

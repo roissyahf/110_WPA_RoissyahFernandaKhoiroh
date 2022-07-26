@@ -1,0 +1,86 @@
+/*Memberi gaya halaman web*/
+*{
+    box-sizing: border-box;
+}
+/*Memberi gaya pada body*/
+.body{
+    margin: 0;
+}
+/*Memberi gaya pada header*/
+.header{
+    height: 100px;
+    width: 100%;
+    background-color: rgb(24, 171, 169);
+    text-align: center;
+    font-size: 25px;
+    color:#ffffff;
+    font-family:'Ubuntu', sans-serif;
+    }
+/*memberi gaya pada slogan: mencerahkan*/
+#cerah{
+    float: center;
+    font-size: 18px;
+    font-family: 'Fresca', sans-serif;
+}
+/*mengatur logo, masih berusaha mengaturnya untuk ditempatkan di sebelah kiri header*/
+#logo {
+    width: 50px;
+    height: 50px;
+}
+/*membuat dua kotak yang saling menempel satu sama lain*/
+.navigation {
+    float: right;
+    width: 20%;
+    height: 825px;
+    background-color: rgb(15, 109, 106);
+    }
+/*memberi gaya pada navigasi*/
+.nav_ul{
+    list-style-type: none;
+    padding: 10px;
+    text-align: left;
+    color: #fae5df;
+    font-family: 'Montserrat', sans-serif;
+    }
+a:hover {color: rgb(217, 255, 0)}
+/*memberi gaya pada article*/
+.article_{
+    float: left;
+    padding: 10px;
+    background-color: #b9d9e7;  
+    width: 80%;
+    height: 825px;
+    font-family: 'Catamaran', sans-serif;
+}
+/*memberi gaya pada <h1> mengapa, apa, paket*/
+#subtask{
+    border-style: dashed;
+    border-color: rgb(253, 8, 8) rgb(10, 248, 10) rgb(57, 57, 242) rgb(243, 179, 20);
+    padding-top: 10px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    text-align: center;
+    font-family:'Righteous', cursive;
+    color: rgb(15, 109, 106);
+}
+/*memberi gaya pada tabel*/
+.table, th, td{
+    border: 1px solid rgb(0, 0, 0);
+    border-collapse: collapse;
+    text-align: center;
+}
+/*memberi gaya pada <p> tunggu*/
+#tunggu{font-family:'Righteous', cursive;
+        font-size: 18px;
+        color:rgb(15, 109, 106);
+        text-align: center;
+}
+/*memberi gaya pada footer*/
+.footer_{
+    background-color: rgb(24, 171, 169);
+    padding: 10px;
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+}
