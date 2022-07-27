@@ -11,7 +11,7 @@ Branch ini berisikan files untuk menjawab tugas timeline minggu ke-2, khusus unt
 
 Buatlah branch baru bernama "javascript" dan masukkan tugas yang kalian kerjakan di kelas pada branch ini.
 
-* On progress
+# On progress
 
 Praktikkan sendiri apa yang telah kamu pelajari, di antaranya:
 
