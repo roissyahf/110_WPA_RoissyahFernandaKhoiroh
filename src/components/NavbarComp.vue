@@ -1,4 +1,5 @@
 <template>
+  <!-- Navigation Bar -->
   <header class="navbar">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container px-5">
@@ -9,10 +10,10 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-                <router-link class="navlink" to="/">HomeView</router-link>
+                <router-link class="navlink" to="/home">Home</router-link>
             </li>
             <li class="nav-item">
-                <router-link class="navlink" to="/">AboutView</router-link>
+                <router-link class="navlink" to="/about">About</router-link>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -20,15 +21,10 @@
                 More
               </a>
               <ul class="dropdown-menu">
-                <li>
-                    <router-link class="navlink" to="/">PricingView</router-link>
-                <li>
-                    <router-link class="navlink" to="/">BookNowView</router-link>
-                <li>
-                    <router-link class="navlink" to="/">BlogView</router-link>
-                <li>
-                  <hr class="dropdown-divider">
-                </li>
+                <li><router-link class="navlink" to="/pricing">Pricing</router-link></li>
+                <li><router-link class="navlink" to="/booking">Book Now</router-link></li>
+                <li><router-link class="navlink" to="/blog">Blog</router-link></li>
+                <li><hr class="dropdown-divider"></li>
               </ul>
             </li>
           </ul>

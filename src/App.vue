@@ -1,10 +1,13 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
+  <div id="nav">
+    <router-link to="/home">Home</router-link> |
     <router-link to="/about">About</router-link>
-  </nav>
+    <router-link to="/pricing">Pricing</router-link>
+    <router-link to="/booking">Book Now</router-link>
+    <router-link to="/blog">Blog</router-link>
+  </div>
   <router-view/>
-</template>./components/HomeComp.vue
+</template>
 
 <style>
 #app {

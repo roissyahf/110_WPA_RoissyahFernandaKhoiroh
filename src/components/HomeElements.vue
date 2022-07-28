@@ -22,7 +22,7 @@
         <a id="service-1"></a>
         <div class="col-2">
           <div class="icon mb-5">
-            <img src="../img/icon/guidance_icon.svg" height="80px" , width="80px">
+            <img src="../assets/images/icon/guidance_icon.svg" height="80px" , width="80px">
           </div>
           <div class="text_service">
             <h5>Private tutoring online materi tertentu</h5>
@@ -35,7 +35,7 @@
         <a id="service-2"></a>
         <div class="col-2">
           <div class="icon mb-5">
-            <img src="../img/icon/task_icon.svg" height="80px" , width="80px">
+            <img src="../assets/images/icon/task_icon.svg" height="80px" , width="80px">
           </div>
           <div class="text_service">
             <h5>Memandu dalam mengerjakan tugas</h5>
@@ -117,7 +117,7 @@
 
 <script>
 export default {
-
+  name: "HomeElements",
 }
 </script>
 

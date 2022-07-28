@@ -6,12 +6,13 @@ import HomeView from '../views/HomeView.vue'
 import AboutView from '../views/AboutView.vue'
 import PricingView from '../views/PricingView.vue'
 import BookNowView from '../views/BookNowView.vue'
+import BlogView from '../views/BlogView.vue'
 
 Vue.use(VueRouter)
 
 const routes = [
   {
-    path: '/',
+    path: '/home',
     name: 'homepage',
     component: HomeView
   },
@@ -21,8 +22,20 @@ const routes = [
     component: AboutView
   },
   {
-    path: '/'
-  }
+    path: '/pricing',
+    name: 'pricingpage',
+    component: PricingView
+  },
+  {
+    path: '/booking',
+    name: 'bookingpage',
+    component: BookNowView
+  },
+  {
+    path: '/blog',
+    name: 'blogpage',
+    component: BlogView
+  },
 ]
 
 const router = createRouter({

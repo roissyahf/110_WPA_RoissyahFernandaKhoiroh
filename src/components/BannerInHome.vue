@@ -1,4 +1,5 @@
 <template>
+  <!-- Carousel Banner -->
   <section class="banner">
     <div class="container">
       <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
@@ -12,7 +13,7 @@
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active" data-bs-interval="10000">
-            <img src="../img/banner/banner_online_learning.jpg" class="d-block w-100" height="560px" , width="280px">
+            <img src="../assets/images/banner/banner_online_learning.jpg" class="d-block w-100" height="560px" , width="280px">
             <div class="carousel-caption d-none d-md-block">
               <span class="highlight">
                 <h5><strong>Kami hadir untuk membantu anda</strong></h5>
@@ -21,7 +22,7 @@
             </div>
           </div>
           <div class="carousel-item" data-bs-interval="2000">
-            <img src="../img/banner/banner_math.jpg" class="d-block w-100" height="560px" , width="280px">
+            <img src="../assets/images/banner/banner_math.jpg" class="d-block w-100" height="560px" , width="280px">
             <div class="carousel-caption d-none d-md-block">
               <span class="highlight">
                 <h5><strong>Pertimbangan untuk memilih kami</strong></h5>
@@ -30,7 +31,7 @@
             </div>
           </div>
           <div class="carousel-item" data-bs-interval="2000">
-            <img src="../img/banner/banner_data.jpg" class="d-block w-100" height="560px" , width="280px">
+            <img src="../assets/images/banner/banner_data.jpg" class="d-block w-100" height="560px" , width="280px">
             <div class="carousel-caption d-none d-md-block">
               <span class="highlight">
                 <h5><strong>Tunggu apa lagi?</strong></h5>
