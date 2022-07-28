@@ -12,7 +12,7 @@ Ubahlah project yang kalian buat dengan html css menjadi vue dan pastikan setiap
 
 # On Progress
 
-Masih berusaha untuk memahami:
+Masih berusaha merubah file mini project versi CDN menjadi vue, sekaligus berusaha untuk memahami:
 
 * Vue CLI
 * Vue Fundamental
