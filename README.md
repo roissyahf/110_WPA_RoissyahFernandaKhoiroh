@@ -1,24 +1,20 @@
-# statmads-profile-vuecliversion
+# Tugas Timeline Minggu ke 3, 4, 5 
 
-## Project setup
-```
-npm install
-```
+_Live Session 7, 8, 9, 10, 11, 12_
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+_Deskripsi singkat_
 
-### Compiles and minifies for production
-```
-npm run build
-```
+Branch ini berisikan files untuk menjawab tugas timeline minggu ke-3, 4, 5 khusus untuk vue. Berisikan mini project membuat company profile, yang diubah ke dalam versi Vue CLI.
 
-### Lints and fixes files
-```
-npm run lint
-```
+* Tugas
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Ubahlah project yang kalian buat dengan html css menjadi vue dan pastikan setiap fitur dapat digunakan. Buat branch baru bernama "vue" dan masukkan tugas kalian ke dalam branch ini. Lakukan push setiap kali kalian melakukan perubahan pada project.
+
+# On Progress
+
+Masih berusaha untuk memahami:
+
+* Vue CLI
+* Vue Fundamental
+* Vue Components
+* Vue Data
