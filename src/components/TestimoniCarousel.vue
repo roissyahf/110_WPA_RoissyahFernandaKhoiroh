@@ -5,7 +5,6 @@
     <div class="rectangle"></div>
     <!-- Slideshow container -->
     <div class="slideshow-container">
-
       <!-- here goes what customers say -->
       <h2 class="fw-bolder mb-0">What They Said?</h2>
 
@@ -13,8 +12,9 @@
       <div class="mySlides">
         <div class="mySlidesContainer">
           <q>
-            Ternyata Statistik tidak serumit yang dibayangkan, berkat dibimbing tim Statmads saya bisa mengerjakan tugas
-            olah data di Eviews, STATA, dan SPSS. Harganya terjangkau pula, memuaskan deh pokoknya.
+            Ternyata Statistik tidak serumit yang dibayangkan, berkat dibimbing
+            tim Statmads saya bisa mengerjakan tugas olah data di Eviews, STATA,
+            dan SPSS. Harganya terjangkau pula, memuaskan deh pokoknya.
           </q>
         </div>
         <p class="author">By: <span>Tessa Mahasiswi Ekonomi Syariah</span></p>
@@ -23,9 +23,10 @@
       <div class="mySlides">
         <div class="mySlidesContainer">
           <q>
-            Jika teman-teman kesulitan memahami materi, sudah membaca referensi kesana kemari tak kunjung paham,
-            Statmads adalah tempat yang cocok untuk menemukan tutor.
-            Saya benar-benar dituntun untuk memahami materi, penjelasan tutornya pun amat mudah dipahami. Recommended
+            Jika teman-teman kesulitan memahami materi, sudah membaca referensi
+            kesana kemari tak kunjung paham, Statmads adalah tempat yang cocok
+            untuk menemukan tutor. Saya benar-benar dituntun untuk memahami
+            materi, penjelasan tutornya pun amat mudah dipahami. Recommended
             banget deh pokoknya.
           </q>
         </div>
@@ -35,10 +36,11 @@
       <div class="mySlides">
         <div class="mySlidesContainer">
           <q>
-            Awalnya saya ragu sama Statmads, tapi saat menghubungi mereka ternyata friendly banget dan pelayanannya
-            memuaskan. Agak sedikit bingung sama paket yang ditawarkan,
-            namun setelah konsultasi dengan admin akhirnya saya mendapatkan paket custom yang sesuai dengan kebutuhan
-            saya.
+            Awalnya saya ragu sama Statmads, tapi saat menghubungi mereka
+            ternyata friendly banget dan pelayanannya memuaskan. Agak sedikit
+            bingung sama paket yang ditawarkan, namun setelah konsultasi dengan
+            admin akhirnya saya mendapatkan paket custom yang sesuai dengan
+            kebutuhan saya.
           </q>
         </div>
         <p class="author">By: <span>Okta Mahasiswi Sistem Informasi</span></p>
@@ -47,8 +49,8 @@
       <!-- Next/prev buttons -->
       <a class="prev">&#10094;</a>
       <a class="next">&#10095;</a>
-
-    </div><!-- END slidehow-container -->
+    </div>
+    <!-- END slidehow-container -->
 
     <!-- Dots/bullets/indicators -->
     <div class="dot-container">
@@ -62,10 +64,58 @@
 <script>
 export default {
   name: "TestimoniCarousel",
+};
+</script>
+
+<!-- JS theme for testimoni -->
+  <script>
+let slides = document.getElementsByClassName("mySlides");
+let dots = document.getElementsByClassName("dot");
+let prev = document.querySelector(".prev");
+let next = document.querySelector(".next");
+
+if (!slides.length == 0) {
+  let slideIndex = 1;
+  showSlides(slideIndex);
+
+  function plusSlides(n) {
+    showSlides((slideIndex += n));
+  }
+
+  let currentSlide = function (n) {
+    showSlides((slideIndex = n));
+  };
+
+  function showSlides(n) {
+    if (n > slides.length) {
+      slideIndex = 1;
+    }
+
+    if (n < 1) {
+      slideIndex = slides.length;
+    }
+
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+  }
 }
 
+prev.addEventListener("click", () => {
+  plusSlides(-1);
+});
+
+next.addEventListener("click", () => {
+  plusSlides(1);
+});
 </script>
 
 <style>
-
 </style>

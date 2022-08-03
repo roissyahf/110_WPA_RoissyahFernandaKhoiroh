@@ -82,8 +82,8 @@
 
 <script>
 export default {
-    name: "BookNowElements"
-}
+  name: "BookNowElements",
+};
 </script>
 
 <style>

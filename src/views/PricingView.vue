@@ -7,19 +7,24 @@
 </template>
 
 <script>
-import NavbarComp from '@/components/NavbarComp.vue'
-import PricingComp from '@/components/PricingComp.vue'
-import FooterComp from '@/components/FooterComp.vue'
+import NavbarComp from "@/components/NavbarComp.vue";
+import PricingComp from "@/components/PricingComp.vue";
+import FooterComp from "@/components/FooterComp.vue";
 
 export default {
-    name: "PricingView",
-    components: {
-        NavbarComp,
-        PricingComp,
-        FooterComp,
-    }
-}
+  name: "PricingView",
+  components: {
+    NavbarComp,
+    PricingComp,
+    FooterComp,
+  },
+};
 </script>
 
 <style>
+/*PRICING PAGE*/
+/*Mengatur gaya pada package*/
+.package {
+  background-color: #fcfdff;
+}
 </style>
