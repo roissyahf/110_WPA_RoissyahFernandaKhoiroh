@@ -69,26 +69,27 @@
       <h2 class="fw-bolder mb-0">Book Now</h2>
       <div class="row gx-5">
         <div class="col-xl-8">
+          <form name="statmads-booking-form">
           <div class="col-md-12 col-sm-6">
-            <label for="exampleFormControlInput1" class="form-label">Nama Lengkap</label>
-            <input class="form-control" id="name" type="text" placeholder="Enter your name..."
+            <label for="NamaLengkap" class="form-label">Nama Lengkap</label>
+            <input class="form-control" name="NamaLengkap" type="text" placeholder="Enter your name..."
               data-sb-validations="required" />
             <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
           </div>
           <div class="col-md-12 col-sm-6 mt-3">
-            <label for="exampleFormControlInput1" class="form-label">Alamat Email</label>
-            <input class="form-control" id="email" type="email" placeholder="name@example.com"
+            <label for="AlamatEmail" class="form-label">Alamat Email</label>
+            <input class="form-control" name="AlamatEmail" type="email" placeholder="name@example.com"
               data-sb-validations="required,email" />
             <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
           </div>
           <div class="col-md-12 col-sm-6 mt-3">
-            <label for="exampleFormControlInput1" class="form-label">No. Handphone</label>
-            <input class="form-control" id="phone" type="tel" placeholder="(+62)..." data-sb-validations="required" />
+            <label for="NoHandphone" class="form-label">No. Handphone</label>
+            <input class="form-control" name="NoHandphone" type="telephone" placeholder="(+62)..." data-sb-validations="required" />
             <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
           </div>
           <div class="col-md-12 col-sm-6 mt-3">
-            <label for="exampleFormControlInput1" class="form-label">Paket</label>
-            <select class="form-select" aria-label="Default select example">
+            <label for="Package" class="form-label">Paket</label>
+            <select class="form-select" aria-label="selected">
               <option selected>Pilih salah satu dari 4 paket berikut</option>
               <option value="PaketSatu">1400 kandela</option>
               <option value="PaketDua">2400 kandela</option>
@@ -97,13 +98,22 @@
             </select>
           </div>
           <div class="col-md-12 col-sm-6 mt-3">
-            <label for="exampleFormControlTextarea1" class="form-label">Tambahan</label>
-            <textarea class="form-control" id="message" type="text"
+            <label for="Tambahan" class="form-label">Tambahan</label>
+            <textarea class="form-control" name="Tambahan" type="text"
               placeholder="Halo Kak, saya bingung memahami materi matkul Pengantar Statistika Matematis, khususnya teknik CDF dan Metode Transformasi. Saya ingin penjelasan detail dari tutor, mulai dari konsep dasar tentunya."
               style="height: 10rem" data-sb-validations="required"></textarea>
             <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
           </div>
-          <button type="button" class="btn btn-lg btn-primary mt-5">Submit</button>
+          <div class="alert alert-success alert-dismissible fade show mt-4 d-none my-alert" role="alert">
+            <strong>Terimakasih!</strong> Pesanan anda sudah kami terima, akan kami hubungi lewat WhatsApp
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>
+          <button type="submit" class="btn btn-lg btn-primary mt-3 btn-submit">Submit</button>
+          <button class="btn btn-lg btn-primary mt-3 d-none btn-loading" type="button">
+            <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+            Loading...
+          </button>
+          </form>
         </div>
         <div class="col-xl-4 col-sm-6">
           <div class="card border-primary bg-light mt-xl-5">
@@ -170,6 +180,33 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
     </script>
+
+  <!-- Booking form -->
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxDINHtfiAN-oKvjzJrFQtG--0IOjKJwOOw_bBs0tUPVQ_BcyY62L_IU6dFhSDNaKLR/exec'
+    const form = document.forms['statmads-booking-form'];
+    const btnSubmit = document.querySelector('.btn-submit');
+    const btnLoading = document.querySelector('.btn-loading');
+    const allertCard = document.querySelector('.my-alert');
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      //when submit button clicked, show loading button and hide submit button
+      btnLoading.classList.toggle('d-none');
+      btnSubmit.classList.toggle('d-none');
+
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then((response) => {
+        //show submit button, hide loading button
+        btnLoading.classList.toggle('d-none');
+        btnSubmit.classList.toggle('d-none');
+        //show alert
+        allertCard.classList.toggle('d-none');
+        console.log('Success!', response);
+        })
+      .catch(error => console.error('Error!', error.message))
+      });
+  </script>
 
 </body>
 
