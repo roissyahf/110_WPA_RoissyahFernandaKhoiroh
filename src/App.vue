@@ -1,13 +1,18 @@
 <template>
-  <div id="app">
+  <!-- <div id="app">
     <router-link to="/home">Home</router-link> |
     <router-link to="/about">About</router-link>
     <router-link to="/pricing">Pricing</router-link>
     <router-link to="/booking">Booking</router-link>
     <router-link to="/blog">Blog</router-link>
-  </div>
+  </div> -->
+  
   <router-view />
 </template>
+
+<script>
+
+</script>
 
 <style>
 @charset "UTF-8";
