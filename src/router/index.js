@@ -1,5 +1,7 @@
-import { createRouter, createWebHistory } from 'vue-router'
-import Vue from 'vue'
+//import { createRouter, createWebHistory } from 'vue-router'
+//import Vue from 'vue'
+import * as Vue from 'vue';
+import * as VueRouter from 'vue-router';
 
 import HomeView from '../views/HomeView.vue'
 import AboutView from '../views/AboutView.vue'
@@ -35,16 +37,20 @@ const routes = [
   },
 ]
 
-const router = createRouter({
-  history: createWebHistory(),
+//const router = createRouter({
+//history: createWebHistory(),
+//routes})
+
+const router = VueRouter.createRouter({
+  history: VueRouter.createWebHistory(),
   routes,
-})
+});
 
-const app = Vue.createApp({})
-// Make sure to _use_ the router instance to make the
-// whole app router-aware.
-app.use(router)
 
-app.mount('#app')
+const App = Vue.createApp(App).use(router).mount('#app');
+
+//const app = Vue.createApp({})
+//app.use(router)
+//app.mount('#app')
 
 //export default router
